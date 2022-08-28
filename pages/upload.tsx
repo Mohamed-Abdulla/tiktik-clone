@@ -19,6 +19,7 @@ const Upload = () => {
   const [wrongFileType, setWrongFileType] = useState(false);
 
   const { userProfile }: { userProfile: any } = useAuthStore();
+
   const router = useRouter();
 
   const uploadVideo = async (e: any) => {
