@@ -72,6 +72,12 @@ const Upload = () => {
       console.log("upload failed");
     }
   };
+  const handleDiscard = () => {
+    setSavingPost(false);
+    setVideoAsset(undefined);
+    setCaption("");
+    setTopic("");
+  };
 
   return (
     <div className="flex w-full h-full absolute left-0 top-[60px] lg:top-[70px] mb-10 pt-10 lg:pt-20 bg-[#F8F8F8] justify-center">
@@ -149,7 +155,7 @@ const Upload = () => {
           </select>
           <div className="flex gap-6 mt-10">
             <button
-              //   onClick={handleDiscard}
+              onClick={handleDiscard}
               type="button"
               className="border-gray-300 border-2 text-md font-medium p-2 rounded w-28 lg:w-44 outline-none"
             >
