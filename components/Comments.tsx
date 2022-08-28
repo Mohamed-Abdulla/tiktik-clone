@@ -81,7 +81,7 @@ const Comments = ({ comment, setComment, addComment, comments, isPostingComment 
         </div>
       ) : (
         <div className="flex items-center justify-center ">
-          <p className=" text-xl  text-gray-900">Login to Like or Comment</p>
+          <p className=" text-xl  text-gray-600 sm:text-lg">Login to Like or Comment</p>
         </div>
       )}
     </div>
